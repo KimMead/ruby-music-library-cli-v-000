@@ -82,6 +82,6 @@ end
     #binding.pry
       #if list_songs[input -1]
         #song = list_songs[input -1]
-      puts "Playing #{Song.all[input-1].name} by #{Song.all.[input-1]artist.name}"
+      puts "Playing #{Song.all[input-1].name} by #{Song.all[input-1].artist.name}"
   end
 end
