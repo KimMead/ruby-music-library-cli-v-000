@@ -80,9 +80,9 @@ end
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     #binding.pry
-      if list_songs[input -1]
-        song = list_songs[input -1]
-      puts "Playing #{song.name} by #{song.artist.name}"
+      #if list_songs[input -1]
+        #song = list_songs[input -1]
+      puts "Playing #{Song.all[input-1].name} by #{Song.all.[input-1]artist.name}"
     end
   end
 end
