@@ -79,9 +79,9 @@ end
     input = ""
     puts "Which song number would you like to play?"
     input = gets.strip
-    binding.pry
-      if Song.find_by_name(input)
-          Song.find_by_name(input) {|a,b| a.name <=> b.name}.each.with_index(1) do |song, index|
+    #binding.pry
+      if list_songs[input -1]
+          song = list_songs[input -1]
       puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
