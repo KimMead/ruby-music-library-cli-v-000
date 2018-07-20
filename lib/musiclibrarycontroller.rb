@@ -81,6 +81,7 @@ end
     input = gets.strip.to_i
     #binding.pry
       if list_songs[input -1]
+        song = list_songs[input -1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
   end
