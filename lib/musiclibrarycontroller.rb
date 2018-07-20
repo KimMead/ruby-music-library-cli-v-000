@@ -78,7 +78,7 @@ end
   def play_song
     input = ""
     puts "Which song number would you like to play?"
-    input = gets.strip.to_i
+    input = gets.strip
     #binding.pry
       if list_songs[input -1]
           song = list_songs[input -1]
