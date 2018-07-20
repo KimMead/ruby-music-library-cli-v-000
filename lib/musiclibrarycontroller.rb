@@ -78,10 +78,9 @@ end
   def play_song
     input = ""
     puts "Which song number would you like to play?"
-    input = gets.strip.to_i
+    input = gets.strip
       if Song.find_by_name(input)
           Song.find_by_name(input) {|a,b| a.name <=> b.name}.each.with_index(1) do |song, index|
-        list_song
       puts "Playing #{song.name} by #{song.artist.name}"
       end
     end
