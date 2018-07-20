@@ -80,7 +80,7 @@ end
     puts "Which song number would you like to play?"
     input = gets.strip.to_i
     #binding.pry
-      if Song.all.sort {|a,b| a.name <=> b.name}
+      if Song.all.sort {|a,b| a.name <=> b.name}.length >= input && input > 0
         song = Song.all.sort {|a,b| a.name <=> b.name}[input-1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
